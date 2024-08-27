@@ -3,6 +3,11 @@
 
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portfolio - Contacto</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/estiloPortfolio.css">
     </head>
@@ -24,11 +29,25 @@
             </aside>
             <section>
                 <h2>Redes Sociales</h2>
-                <ul>
+                <ul class="redes">
                     <li><a href="https://www.linkedin.com/in/tob%C3%ADas-gasparotto-vietto-b12a3926b/?trk=public-profile-join-page" target="_blank">LinkedIn</a></li>
                     <li><a href="https://github.com/GasparottoTobias" target="_blank">GitHub</a></li>
-                    <li><a href="https://x.com/TobiGasparotto" target="_blank">Twitter</a></li>
                 </ul>
+            </section>
+            <section class="Formulario">
+                <h2>Formulario</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+              
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+              
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </div>
     </body>
