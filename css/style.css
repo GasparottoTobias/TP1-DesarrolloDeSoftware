@@ -32,6 +32,7 @@ nav a {
     text-decoration: none;
     margin: 0 30px;
     font-size: 18px;
+
 }
 
 aside{
@@ -54,29 +55,42 @@ article{
     box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
-.fotoPerfil {
+.container {
     display: flex;
-    margin: 0 auto; 
-    width: 400px;
-    height: 400px;
-    transition: border 0.3s ease;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.foto img {
+    max-width: 300px;
+}
+
+.descripcion {
+    flex: 1;
+    margin-left: 20px;
+    color: white;
+    padding: 50px;
+    height: 300px;
 }
   
-.fotoPerfil:hover {
+.foto:hover {
     border: 5px solid rgba(47, 38, 91, 0.5); 
 }
 
-.redes a {
-    color: #4CAF50; 
+.redes li a {
+    color: #1079e2; 
     font-size: 22px; 
     text-decoration: none; 
     transition: color 0.3s ease; 
     display: block; 
     margin-bottom: 10px; 
-  }
+}
+
   
 footer a:hover {
-    color: #5cd262;
+    color: #1517aa;
 }
   
 .redes:visited {
@@ -84,7 +98,7 @@ footer a:hover {
 }
 .Formulario {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 20px;
     background-color: #d1d1d1;
     border-radius: 8px;
@@ -92,6 +106,9 @@ footer a:hover {
 }
 .Formulario form{
     max-width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
   
 .Formulario h2 {
@@ -109,21 +126,22 @@ footer a:hover {
 .Formulario input[type="text"],
 .Formulario input[type="email"],
 .Formulario textarea {
-    width: 100%;
     max-width: 100%;
+    min-width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1em;
 }
   
 .Formulario button {
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #2718cb;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
   }
