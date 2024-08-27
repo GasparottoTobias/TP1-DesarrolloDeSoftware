@@ -55,10 +55,10 @@ article{
     margin-bottom: 20px;
 }
 .fotoPerfil {
-    display: block;
+    display: flex;
     margin: 0 auto; 
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     transition: border 0.3s ease;
 }
   
@@ -66,21 +66,21 @@ article{
     border: 5px solid rgba(47, 38, 91, 0.5); 
 }
 
-.redes {
-    color: #4CAF50; /* Color inicial verde */
-    font-size: 22px; /* Tamaño de la fuente más grande */
-    text-decoration: none; /* Elimina el subrayado */
-    transition: color 0.3s ease; /* Transición suave */
-    display: block; /* Hace que el enlace ocupe toda la línea */
-    margin-bottom: 10px; /* Espacio entre los enlaces */
+.redes a {
+    color: #4CAF50; 
+    font-size: 22px; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    display: block; 
+    margin-bottom: 10px; 
   }
   
-.redes:hover {
-    color: #45a049; /* Color al pasar el mouse */
+footer a:hover {
+    color: #5cd262;
 }
   
 .redes:visited {
-    color: #9E9E9E; /* Color cuando el enlace ha sido visitado */
+    color: #9E9E9E; 
 }
 .Formulario {
     max-width: 600px;
